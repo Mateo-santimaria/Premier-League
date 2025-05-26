@@ -1,0 +1,153 @@
+/******** Estilos Generales ********/
+body {
+    font-family: "Roboto Slab", serif;
+    background-color: #f3f3f3;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+}
+hr {
+    border: none;
+    border-top: 2px solid #4b286d;
+    margin: 40px 0;
+}
+
+/******** Encabezados************/
+
+header {
+    background: linear-gradient(90deg, #38003c 60%, #00ff87 100%);
+    color: #fff;
+    padding: 30px 0 15px 0;
+    text-align: center;
+    position: relative;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+header img {
+    width: 90px;
+    margin: 15px 0;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+header nav a:hover {
+    color: #00ff87;
+}
+
+/******** Logo ********/
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(56,0,60,0.15);
+    margin: 20px 0 10px 0;
+    border: 4px solid #fff;
+    background: #fff;
+}
+
+
+
+/******** Secciones y titulos ********/
+
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    color: #38003c;
+    border-left: 5px solid #00ff87;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+p {
+    line-height: 1.7;
+}
+
+/******** Listas y enlaces ********/
+
+ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+a {
+    color: #38003c;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #00ff87;
+}
+
+/******** Footer ********/
+
+footer {
+    background: #38003c;
+    color: #fff;
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 10px 0;
+}
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+footer nav a:hover {
+    color: #00ff87;
+}
+footer iframe {
+    border-radius: 12px;
+    margin: 20px 0;
+    max-width: 90%;
+    height: 300px;
+}
+footer p {
+    margin: 10px 0 0 0;
+    font-size: 0.95em;
+}
+
+/******** Responsive Desing ********/
+
+@media (max-width: 700px) {
+    main {
+        padding: 8px;
+    }
+    header nav ul, footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer iframe {
+        height: 180px;
+    }
+}

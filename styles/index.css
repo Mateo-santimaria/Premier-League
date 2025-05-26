@@ -1,0 +1,92 @@
+
+/******* Formulario de contacto *******/
+
+form {
+    background: #f8f8fc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(56,0,60,0.08);
+    max-width: 500px;
+    margin: 0 auto;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #38003c;
+    font-weight: 500;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+form input:focus,
+form textarea:focus {
+    border: 1.5px solid #38003c;
+    outline: none;
+}
+form input[type="submit"],
+form input[type="reset"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #38003c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background 0.2s;
+}
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background: #00ff87;
+    color: #38003c;
+}
+
+/******* Enlaces ultimas noticias *******/
+
+.ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    max-width: 350px;
+}
+
+.li {
+    box-shadow: 0 2px 8px rgba(56,0,60,0.07);
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.li:hover {
+    box-shadow: 0 4px 16px rgba(0,255,135,0.15);
+}
+
+.a {
+    display: block;
+    padding: 16px 24px;
+    background: linear-gradient(90deg, #38003c 70%, #00ff87 100%);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.a:hover {
+    background: linear-gradient(90deg, #00ff87 60%, #38003c 100%);
+    color: #38003c;
+    transform: scale(1.03);
+}
+
