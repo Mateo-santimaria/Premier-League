@@ -17,11 +17,7 @@
 </head>
 <body>
     <header>
-        <h1>
-            Premier League
-        </h1>
-        <img src="../assets/images/Premier-League-logo.png.png" alt="">
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./equipos.html">Equipos</a></li>
@@ -33,7 +29,7 @@
     <main>
         <section>
             <h2>Bienvenidos a la Premier League</h2>
-            <p>La Premier League es la amxima categoria del sistema de ligas del futbol Inglés. Participan 20 clubes y la temporada se extiende de Agosto a Mayo.</p>
+            <p>La Premier League es la maxima categoria del sistema de ligas del futbol Inglés. Participan 20 clubes y la temporada se extiende de Agosto a Mayo.</p>
         </section>
         <section>
             <h2>
@@ -58,10 +54,8 @@
         </section>
         <hr>
         <section>
+            <h2>Formulario de contacto</h2>
             <form>
-                <!-- ❗Este h2 deberia ir dentro de la section pero fuera del form
-                    ya que no es un elemento de formulario -->
-                <h2>Formulario de contacto</h2>
                 <label for="nombre"> Nombre: </label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre">
                 <br>
@@ -78,6 +72,11 @@
                 <input type="reset" value="Limpiar">
             </form>
         </section>
+        <div class="consulta-logo" tabindex="0" aria-describedby="info-consulta">
+          <img src="/assets/images/Premier-League-logo.png.png" alt="Logo de consulta" />
+          <div class="info-tooltip" role="tooltip" id="info-consulta">
+          Aquí puedes consultar información importante.
+        </div>
     </main>
     <hr>
     <footer>
@@ -88,7 +87,6 @@
                 <li><a href="Equipos.html">Equipos</a></li>
                 <li><a href="Partidos.html">Partidos</a></li>
                 <li><a href="Resuktados.html">Resultados</a></li>
-                <!--- No es funcional aun el nav-->
             </ul>
         </nav>
         <p>&copy; 2025 Premier League. All rights reserved.</p>

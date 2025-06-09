@@ -90,3 +90,52 @@ form input[type="reset"]:hover {
     transform: scale(1.03);
 }
 
+/********Logo de consulta********/
+
+.consulta-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+}
+
+.consulta-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.consulta-logo:hover img,
+.consulta-logo:focus img {
+  transform: scale(1.5);
+}
+
+/* Tooltip oculto por defecto */
+.info-tooltip {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar tooltip al hover o focus */
+.consulta-logo:hover .info-tooltip,
+.consulta-logo:focus .info-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
