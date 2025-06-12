@@ -12,21 +12,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="consulta-logo" tabindex="0" aria-describedby="info-consulta">
-      <img src="/assets/images/Premier-League-logo.png.png" alt="Logo de consulta" />
-      <div class="info-tooltip" role="tooltip" id="info-consulta">
-          Aquí puedes consultar información importante.
+  <div class="fijar"> 
+   <!-- Barra superior -->
+   <div class="topbar">
+     <div class="topbar-links">
+       <a href="#">Iniciar sesión</a> | <a href="#">Crear cuenta</a>
+     </div>
+   </div>
+
+  <!-- Navbar principal -->
+   <header class="navbar">
+     <div class="navbar-content">
+      <!-- Buscador -->
+       <form class="search-box">
+        <input type="text" placeholder="¿Qué estás buscando?">
+        <button type="submit">&#128269;</button>
+      </form>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../assets/images/Premier-League-logo.png.png" alt="Premier League Logo">
+      </div>
+      <!-- Carrito -->
+      <div class="cart">
+        <span class="cart-icon">&#128722;</span>
+        <span class="cart-count">(0)</span>
+      </div>
     </div>
-    <header >
-        <nav class="nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./equipos.html">Equipos</a></li>
-                <li><a href="./partidos.html">Partidos</a></li>
-                <li><a href="./resultados.html">Resultados</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Menú -->
+    <nav class="menu">
+      <a href="./index.html">Inicio</a>
+      <a href="./preventas.html">Pre-ventas</a>
+      <a href="./equipos.html">Equipos</a>
+      <a href="./quienes-somos.html">Quiénes Somos</a>
+    </nav>
+  </header>
+
+  <!-- Franja -->
+  <div class="promo-bar">
+    Aprovechá nuestras promociones bancarias
+  </div>
+  </div> 
     <main>
         <section>
             <h2>
@@ -85,9 +110,9 @@
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./preventas.html">Pre-ventas</a></li>
                 <li><a href="./equipos.html">Equipos</a></li>
-                <li><a href="./partidos.html">Partidos</a></li>
-                <li><a href="./resultados.html">Resultados</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos</a></li>
             </ul>
         </nav>
         <p>&copy; 2025 Premier League. All rights reserved.</p>

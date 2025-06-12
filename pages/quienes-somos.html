@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Premier League">
-    <meta name="description" content="Bienvenidos a la Premier League, la máxima categoría del fútbol inglés. Aquí encontrarás información sobre equipos, partidos y resultados.">
-    <meta name="keywords" content="Premier League, fútbol inglés, equipos, partidos, resultados">
-    <title>Premier league</title>
+    <title>Resultados</title>
     <link rel="icon" href="../assets/images/Premier-League-logo.png.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/quienes-somos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
   <div class="fijar"> 
@@ -56,31 +54,22 @@
   </div>
   </div> 
     <main>
-        <section>
-            <h2>Bienvenidos a la Premier League</h2>
-            <p>La Premier League es la maxima categoria del sistema de ligas del futbol Inglés. Participan 20 clubes y la temporada se extiende de Agosto a Mayo.</p>
-        </section>
-        <section>
-            <h2>
-                Historia de la Premier League
-            </h2>
-            <p>La Premier League es la máxima categoría del fútbol inglés y se originó en 1992, cuando los clubes más importantes de la antigua First Division decidieron separarse de la Football League para formar una nueva competición con mayor independencia comercial y capacidad para negociar sus propios derechos de televisión y patrocinio. Esta decisión fue motivada por el deseo de aumentar los ingresos y poder competir económicamente con los grandes clubes europeos. La liga se fundó oficialmente el 27 de mayo de 1992 y su primera temporada, la 1992-93, contó con 22 equipos, entre ellos históricos como Manchester United, Liverpool, Arsenal y Chelsea. El primer gol de la historia de la Premier League lo marcó Brian Deane, del Sheffield United. Desde entonces, la Premier League ha mantenido un formato atractivo y competitivo, convirtiéndose en una de las ligas más populares y seguidas del mundo, con un modelo económico y de difusión que ha revolucionado el fútbol global.</p>
-        </section>
-        <hr>
-        <section>
-            <h2>Ultimas noticias</h2>
-            <ul class="ul">
-                <li class="li">
-                    <a class="a" href="https://www.promiedos.com.ar/league/premier-league/h" target="_blank"> Fixture y tablas </a>
-                </li>
-                <li class="li">
-                    <a class="a" href="https://www.promiedos.com.ar/league/premier-league/h/equipos" target="_blank"> Equipos y estadisticas</a>
-                </li>
-                <li class="li">
-                    <a class="a" href="https://www.promiedos.com.ar/league/premier-league/h/historial" target="_blank"> Campeones </a>
-                </li>
-            </ul>
-        </section>
+      <div class="contact-form-container">
+  <form class="contact-form" action="#" method="post">
+    <h2>Contáctanos</h2>
+    <label for="name">Nombre</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" placeholder="Tu email" required>
+
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
     </main>
     <hr>
     <footer>
@@ -94,5 +83,8 @@
             </ul>
         </nav>
         <p>&copy; 2025 Premier League. All rights reserved.</p>
+        
+    </footer>
+    
 </body>
 </html>

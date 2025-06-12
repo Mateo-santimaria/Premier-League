@@ -4,7 +4,7 @@ body {
     background-color: #f3f3f3;
     color: #222;
     margin: 0;
-    padding: 0;
+    padding: 12%;
 }
 main {
     max-width: 900px;
@@ -22,52 +22,138 @@ hr {
 
 /******** Encabezados************/
 
-header {
-  background-image: url(/assets/images/Premier-background.jpg);
-  background-size: cover;         
-  background-position: center;    
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;   
-  height: 100vh; 
+.fijar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Barra superior */
+.topbar {
+  background: #4b286d;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topbar-links {
+  margin-right: 30px;
+}
+
+.topbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.topbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar principal */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 30px 10px 30px;
 }
-header nav a:hover {
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #4b286d;
+  border-radius: 20px;
+  padding: 3px 10px;
+  width: 220px;
+  background: #fff;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 15px;
+  background: transparent;
+  padding: 6px 0;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #4b286d;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;       
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  border: 2px solid #4b286d;
+  border-radius: 20px;
+  padding: 3px 15px;
+  font-size: 18px;
+  color: #4b286d;
+  background: #fff;
+}
+
+.cart-icon {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.cart-count {
+  font-size: 15px;
+}
+
+/* Menú de navegación */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.menu a {
+  color: #4b286d;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
   color: #00ff87;
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background: rgba(0,0,0,0.4);
-  border-radius: 10px;
-  transition: right 0.3s;
-}
-
-header nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: color 0.2s, background 0.2s;
-}
-.nav {
-  position: fixed; 
-  top: 0;           
-  left: 0;
-  width: 100%;     
-  background-color: #38003c;
-  z-index: 1000;   
-  box-shadow: 0 2px 5px rgba(163, 10, 10, 0.1);
+/* Franja inferior */
+.promo-bar {
+  background:#4b286d;
+  color: #00ff87;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
 }
 
 /******** Secciones y titulos ********/
